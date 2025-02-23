@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Anime</title>
+    <link rel="styleSheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+
+    .searchAnimeContainer {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    }
+
+    header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ff0099, #493240);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .insideSearchAnime{
+        background-color:#222831;
+        border-radius: 10px;
+        padding:20px;
+        margin:20px;
+        
+    }
+    .insideSearchAnime a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1d72b8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+  }
+   .insideSearchAnime .trailerButton {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .insideSearchAnime a:hover {
+    background-color: #155a8a;
+  }
+
+    .searchAnimeImage{
+        height:300px;
+        width:200px;
+        box-shadow: 0px 0px 30px black;
+        border:none;
+        border-radius: 10px;
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="searchAnimeContainer">
+        <header>
+            <img src="Gojo-Background-PNG.png">
+            <h1>Search Anime</h1>
+            <input type="text" id="searchBox" placeholder="search the anime you want...">
+            <button class="searchBtn">Search</button>
+        </header>
+        <nav>
+            <button class="home">Home</button>
+            <button class="aboutUS">About us</button>
+            <button class="searchAnime">Search Anime</button>
+            <button class="latestAnime">Latest Trailer</button>
+        </nav>
+    </div>
+    <p class="animeDescription">
+
+    </p>
+   
+<script src="searchAnime.js"></script>
+<script>
+let home=document.querySelector(".home");
+home.addEventListener("click",()=>{
+window.location.href="index.html";
+});
+
+let aboutUs=document.querySelector(".aboutUS");
+aboutUs.addEventListener("click",()=>{
+window.location.href="about.html";
+});
+
+let searchAnime=document.querySelector(".searchAnime");
+searchAnime.addEventListener("click",()=>{
+window.location.href="searchAnime.html";
+});
+
+let latest=document.querySelector(".latestAnime");
+latest.addEventListener("click",()=>{
+window.location.href="latestAnime.html";
+});
+</script>
+</body>
+</html>
