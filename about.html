@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="styleSheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+.aboutContainer {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+.descriptionContainer{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding:30px;
+    margin:40px;
+    height:fit-content;
+    width:fit-content;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="aboutContainer">
+            <header>
+                <img src="g:\test\niche project(anime)\Gojo-Background-PNG.png">
+                <h1>About Us</h1>
+            </header>
+            <nav>
+                <button class="home">Home</button>
+                <button class="aboutUS">About us</button>
+                <button class="searchAnime">Search Anime</button>
+                <button class="latestAnime">Latest Trailer</button>
+            </nav>
+    </div>
+    <div class="descriptionContainer">
+        <div class="description">
+        <p>
+            Welcome to Otaku Tube, your one-stop hub for everything 
+            anime! Whether you're a long-time otaku or just stepping 
+            into the vast<br> world of anime, we’ve built this platform to   
+            fuel your passion and keep you updated with all things anime.
+        </p><br><br>
+What We Offer:<br>
+Search Any Anime: Looking for details about a specific anime? Use our search feature to find descriptions, ratings, and more!<br><br>
+Top Airing Anime: Stay in the loop with the hottest anime currently airing.<br>
+Top Movies: Discover the best anime movies loved by fans worldwide.<br>
+Top Manga: Explore the most popular manga that are taking the community by storm.<br>
+Anime Content: Access a growing collection of wallpapers, clips, and edits to celebrate your favorite anime.<br><br>
+Why Otaku Tube?<br>
+Comprehensive Search: Find accurate descriptions and info about any anime you love.<br>
+Latest Rankings: Always updated lists of top airing anime, movies, and manga.<br>
+Community for Otakus: Built by anime lovers, for anime lovers!<br><br>
+Join Otaku Tube and dive into the ever-expanding anime universe with us!
+
+Your Journey Into Anime Starts Here.
+
+— Team Otaku Tube
+</div>
+</div>
+<div class="footer">
+   <center>
+    <a href="https://x.com/aizewak" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i></a>
+    </center>
+</div>
+<script>
+    let home=document.querySelector(".home");
+    home.addEventListener("click",()=>{
+        window.location.href="index.html";
+    });
+    let aboutUs=document.querySelector(".aboutUS");
+    aboutUs.addEventListener("click",()=>{
+        window.location.href="about.html";
+    });
+
+    let searchAnime=document.querySelector(".searchAnime");
+    searchAnime.addEventListener("click",()=>{
+    window.location.href="searchAnime.html";
+    });
+    let latest=document.querySelector(".latestAnime");
+    latest.addEventListener("click",()=>{
+    window.location.href="latestAnime.html";
+    });
+
+  
+</script>
+</body>
+</html>

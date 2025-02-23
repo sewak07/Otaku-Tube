@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="g:\test\niche project(anime)\Gojo-Background-PNG.png" alt="Image with transparent background" />
+            <h1>Otaku Tube</h1>
+        </header>
+        <nav>
+            <button class="home">Home</button>
+            <button class="aboutUS">About us</button>
+            <button class="searchAnime">Search Anime</button>
+            <button class="latestAnime">Latest Trailer</button>
+            
+        </nav>
+        <div class="aside-left">
+            <h1>Top Airing Anime</h1>
+            <p class="topAiring"></p>
+        </div>
+        <div class="middle">
+            <h2>Recommendations</h2>
+            <div class="mainContent">
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <div class="aside-right">
+            <div class="basicInfo">
+                <h2>Top movie by popularity</h2>
+                <p class="topMovie"></p>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script>
+let home=document.querySelector(".home");
+home.addEventListener("click",()=>{
+window.location.href="index.html";
+});
+
+let aboutUs=document.querySelector(".aboutUS");
+aboutUs.addEventListener("click",()=>{
+window.location.href="about.html";
+});
+
+let searchAnime=document.querySelector(".searchAnime");
+searchAnime.addEventListener("click",()=>{
+window.location.href="searchAnime.html";
+});
+
+let latest=document.querySelector(".latestAnime");
+latest.addEventListener("click",()=>{
+window.location.href="latestAnime.html";
+});
+
+</script>
+
+</body>
+</html>
