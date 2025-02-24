@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details</title>
+    <link rel="styleSheet" href="styles.css">
+    <style>
+/* Anime Image Styling */
+.searchAnimeImage {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px black;
+}
+
+/* Anime Info Container */
+#animeInfo {
+    background-color: #222831;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Character Grid */
+#animeCharacters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual Character Box */
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222831;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Character Images */
+.character img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Character Name */
+.character p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* Character Role Styling */
+.character p:last-child {
+    font-size: 12px;
+    color: #1d72b8; /* Change to a different color for role */
+}
+
+/* Responsive Design */
+
+/* Medium Screens (tablets and small screens) */
+@media (max-width: 1024px) {
+    .searchAnimeImage {
+        width: 200px;
+        height: 250px;
+    }
+
+    #animeCharacters {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Two columns layout for tablets */
+    }
+
+    .character img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Smaller Screens (phones) */
+@media (max-width: 768px) {
+    .searchAnimeImage {
+        width: 180px;
+        height: 230px;
+    }
+
+    #animeCharacters {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* One or two columns layout for small screens */
+    }
+
+    .character img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .character p {
+        font-size: 12px; /* Smaller text size for phone screens */
+    }
+}
+
+/* Very Small Screens (small mobile devices) */
+@media (max-width: 480px) {
+    .searchAnimeImage {
+        width: 150px;
+        height: 200px;
+    }
+
+    #animeCharacters {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+        gap: 10px;
+    }
+
+    .character img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .character p {
+        font-size: 10px; /* Even smaller text size */
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="searchAnimeContainer">
+        <header>
+            <img src="Gojo-Background-PNG.png">
+            <h1>Anime Details</h1>
+        </header>
+        <nav>
+            <button class="home">Home</button>
+            <button class="aboutUS">About us</button>
+            <button class="searchAnime">Search Anime</button>
+            <button class="latestAnime">Latest Trailer</button>
+        </nav><br><br>
+        <div id="animeInfo">
+        </div>
+    </div>
+    <script src="animeDetails.js"></script>
+    <script>
+        let home=document.querySelector(".home");
+home.addEventListener("click",()=>{
+window.location.href="index.html";
+});
+
+let aboutUs=document.querySelector(".aboutUS");
+aboutUs.addEventListener("click",()=>{
+window.location.href="about.html";
+});
+
+let searchAnime=document.querySelector(".searchAnime");
+searchAnime.addEventListener("click",()=>{
+window.location.href="searchAnime.html";
+});
+
+let latest=document.querySelector(".latestAnime");
+latest.addEventListener("click",()=>{
+window.location.href="latestAnime.html";
+});
+    </script>
+</body>
+</html>
